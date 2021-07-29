@@ -1,0 +1,2 @@
+192.168.0.1 ansible_user=fm
+192.168.0.2 ansible_user=fm

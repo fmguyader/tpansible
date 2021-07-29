@@ -1,0 +1,17 @@
+---
+- hosts: all 
+  become: true 
+  tasks:
+  - name: install apache  
+    apt:
+      name:
+        - apache2   
+      update_cache: yes
+  - name: chmod Var
+    file:
+      path: /var
+      mode: '0777'
+  - name: pokemon copy
+    copy: 
+      src: html/
+      dest: /var/www/html
