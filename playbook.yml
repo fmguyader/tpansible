@@ -18,5 +18,5 @@
   - name: demarrage appache
     service:
       name: apache2
-      state: running 
+      state: started 
       enabled: yes
