@@ -11,6 +11,10 @@
     file:
       path: /var
       mode: '0777'
+  - name: suppression index.html
+    file:
+      path: /var/www/html/index.html
+      state: absent
   - name: pokemon copy
     copy: 
       src: html/
