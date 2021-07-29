@@ -9,12 +9,13 @@
       update_cache: yes
   - name: chmod Var
     file:
-      path: /var
-      mode: '0777'
-  - name: suppression index.html
-    file:
-      path: /var/www/html/index.html
-      state: absent
+      path: /var/www/html
+      mode: '0755'
+      state: directory
+  # - name: suppression index.html
+  #   file:
+  #     path: /var/www/html/index.html
+  #     state: absent
   - name: index copy
     copy: 
       src: html/
