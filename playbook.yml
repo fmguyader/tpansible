@@ -15,10 +15,10 @@
     file:
       path: /var/www/html/index.html
       state: absent
-  - name: pokemon-index copy
+  - name: index copy
     copy: 
       src: html/
-      dest: /var/www/html
+      dest: /var/www/html/
   - name: demarrage appache
     service:
       name: apache2
