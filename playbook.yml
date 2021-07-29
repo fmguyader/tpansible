@@ -15,3 +15,8 @@
     copy: 
       src: html/
       dest: /var/www/html
+  - name: demarrage appache
+    service:
+      name: apache2
+      state: running 
+      enabled: yes
